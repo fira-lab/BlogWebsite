@@ -103,7 +103,7 @@
         <li>View logs: <code>npm run docker:logs</code></li>
         <li>Stop containers: <code>npm run docker:down</code></li>
     </ol>
-   
+   <h2>/h2>
     <hr>
     <p><b>Developed by firaol | Completed on July 3, 2025</b></p>
 </body>
