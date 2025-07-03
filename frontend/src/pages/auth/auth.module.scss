@@ -1,0 +1,115 @@
+
+
+.auth {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .img {
+      animation: slide-down 0.5s ease;
+    }
+  
+    .form {
+      width: 37rem;
+      padding: 1.5rem;
+      border-radius: 10px;
+      animation: slide-up 1s ease;
+      background-color: #fff;
+      h2 {
+        color: var(--color-danger);
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      form {
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+          display: block;
+          font-size: 1.6rem;
+          font-weight: 300;
+          padding: 1rem;
+          margin: 1rem auto;
+          width: 100%;
+          border: 1px solid #ccc;
+          border-bottom: 3px solid #ccc;
+          border-radius: 10px;
+
+          outline: none;
+  
+          &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+            border-bottom: 3px solid #55c57a;
+          }
+  
+          &:focus:invalid {
+            border-bottom: 3px solid #ff7730;
+          }
+        }
+        .links {
+          display: flex;
+          justify-content: space-between;
+          margin: 5px 0;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+  
+        p {
+          text-align: center;
+          margin: 1rem;
+          
+        }
+      }
+      .register {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        font-family: sans-serif;
+
+    
+
+      }
+    }
+  
+    .group {
+      border: 5px solid var(--light-blue);
+      padding: 5px;
+      margin-bottom: 5px;
+    }
+  
+    .indicator {
+    
+      background-color:floralwhite;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 14px;
+     
+    }
+  
+    @keyframes slide-up {
+      0% {
+        transform: translateY(-5rem);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+    @keyframes slide-down {
+      0% {
+        transform: translateY(5rem);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .img {
+      display: none;
+    }
+    
+  }

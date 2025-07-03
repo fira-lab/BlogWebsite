@@ -1,0 +1,15 @@
+/* This class will hide the scrollbar only on small screens */
+@media (min-width: 867px) {
+  .hide-scrollbar-on-small {
+    /* For IE and Edge */
+    -ms-overflow-style: none;
+    /* For Firefox */
+    scrollbar-width: none;
+  }
+  /* For Chrome, Safari, and Opera */
+  @media screen and (min-width: 867px) {
+    .hide-scrollbar-on-small::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

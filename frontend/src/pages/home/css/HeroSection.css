@@ -1,0 +1,258 @@
+/* Remove or comment out the problematic img styles */
+/* img {
+    object-fit: cover;
+    width: 100%;
+    position: fixed;
+    height: 70%;
+    z-index: -1;
+} */
+
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.hero-container {
+  /* background: url('/images/banner1.png') center center/cover no-repeat; */
+  position: relative;
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+  overflow: hidden; /* Ensure particles stay within container */
+}
+
+/* Updated hero-container > h1 styles with Tailwind-inspired gradient text and glimmer animation */
+.hero-container > h1 {
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 6rem; /* text-4xl */
+  margin-bottom: 1rem; /* mb-4 */
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right, #ffffff, #d40505, #9333ea);
+  animation: glimmer 5s infinite;
+}
+
+/* Responsive font sizes for hero-container > h1 */
+@media (min-width: 640px) {
+  /* sm breakpoint */
+  .hero-container > h1 {
+    font-size: 6rem; /* text-5xl */
+  }
+}
+@media (min-width: 768px) {
+  /* md breakpoint */
+  .hero-container > h1 {
+    font-size: 8rem; /* text-6xl */
+  }
+}
+@media (min-width: 1024px) {
+  /* lg breakpoint */
+  .hero-container > h1 {
+    font-size: 12rem; /* text-7xl */
+  }
+}
+
+.hero-container > p {
+  margin-top: 8px;
+  color: #fff;
+  font-size: 32px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.hero-btns {
+  margin-top: 32px;
+}
+
+.hero-btns .btn {
+  margin: 6px;
+}
+
+.fa-play-circle {
+  margin-left: 4px;
+}
+
+@media only screen and (max-width: 1400px) {
+  /* If needed, adjust margins or other properties here */
+}
+
+@media screen and (max-width: 960px) {
+  /* Additional adjustments can be made here if necessary */
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container > p {
+    font-size: 30px;
+  }
+
+  .btn-mobile {
+    display: block;
+    text-decoration: none;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+/* Glimmer keyframes for animation */
+@keyframes glimmer {
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+/* Additional Animations */
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.8s ease-out;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Particle Text Style */
+.particle-text {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  background: linear-gradient(45deg, #4f46e5, #06b6d4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8),
+      0 0 30px rgba(79, 70, 229, 0.6), 0 0 40px rgba(6, 182, 212, 0.4);
+  }
+}
+
+#tsparticles {
+  position: absolute !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+}
+
+/* Particle Text Mask */
+.particles-text-mask {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  font-weight: bold;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  z-index: 2;
+}
+
+/* Chat Overlay and Animations */
+.chat-overlay {
+  animation: slideIn 0.01s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.chat-button {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Modified Chatbot and Sensitive Area Styles */
+.chatbot-window {
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+}
+
+.sensitive-area {
+  position: fixed; /* Fixed relative to viewport */
+  bottom: 1rem; /* 1rem from the bottom */
+  right: 1rem; /* 1rem from the right */
+  width: 100%; /* Define the interactive area's width */
+  height: 100%; /* Define the interactive area's height */
+  animation: slideIn 0.3s ease-out;
+  z-index: 60; /* Ensure it appears above other elements */
+}
+
+/* Existing slideIn keyframes (unchanged) */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

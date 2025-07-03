@@ -1,0 +1,53 @@
+.user-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    padding: 10px;
+  }
+  
+  .--mt {
+    margin-top: 20px;
+  }
+  
+  .info-summay {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 40px;
+    font-family: sans-serif;
+    font:bold
+   
+  }
+  .card1, .card2, .card3, .card4 {
+    background-color: #ff6347; /* Tomato */
+    width: 250px; /* Adjust this value to change the width */
+    height: 100px; /* Adjust this value to change the height */
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; /* Optional: to make the corners rounded */
+  }
+  
+  .card1 {
+    background-color: #ec391a; /* Tomato */
+  }
+  
+  .card2 {
+    background-color: #71bc00; /* GreenYellow */
+  }
+  
+  .card3 {
+    background-color: #028ab8; /* DeepSkyBlue */
+  }
+  
+  /* For suspended users, you didn't specify a color. Let's assume it's gray. */
+  .card4 {
+    background-color:rgb(219, 219, 0); /* Gray */
+  }
+  

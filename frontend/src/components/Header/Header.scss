@@ -1,0 +1,47 @@
+header {
+  background-color: #333;
+  padding: 20px 0;
+  color: #b8acac;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+    .logo {
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-right: 10px;
+      }
+
+      span {
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+
+    .home-links {
+      padding-left: 900px;
+      list-style: none;
+      margin-left: 40px;
+      display: flex;
+      align-items: center;
+
+      li {
+        display: flex;
+        align-items: center;
+
+        svg {
+          margin-right: 5px;
+        }
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
