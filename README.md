@@ -84,7 +84,7 @@
     </ul>
     <h3>Installation</h3>
     <ol>
-        <li>Clone the repository: <code>git clone </code></li>
+        <li>Clone the repository: <code>git clone https://github.com/fira-lab/BlogWebsite </code></li>
         <li>Navigate to the project directory: <code>cd backend or cd frontend</code></li>
         <li>Install backend dependencies: <code>npm install</code></li>
         <li>Install frontend dependencies: <code>cd frontend && npm install</code></li>
@@ -103,8 +103,7 @@
         <li>View logs: <code>npm run docker:logs</code></li>
         <li>Stop containers: <code>npm run docker:down</code></li>
     </ol>
-    <h2>License</h2>
-    <p>MIT License</p>
+   
     <hr>
     <p><b>Developed by firaol | Completed on July 3, 2025</b></p>
 </body>
