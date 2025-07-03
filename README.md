@@ -105,6 +105,6 @@
     </ol>
    <h2></h2>
     <hr>
-    <p><b>Developed by Firaol Terefe <a src="https://firaai.vercel.app/">more info</a> | Completed on July 3, 2025</b></p>
+    <p><b>Developed by Firaol Terefe  | Completed on July 3, 2025</b></p>
 </body>
 </html>
